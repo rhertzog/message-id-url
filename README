@@ -1,0 +1,19 @@
+Introduction
+------------
+
+Message-ID-url aims to be an implementation of the "mid" URL scheme
+described in RFC 2392.
+
+Design
+------
+In order to find the corresponding message, the application can be
+configured to look in multiple sources. The first source should be
+the mail store associated to the mail user agent of the user but 
+other sources can be external services like gmane, or even
+the Message-ID redirector provided by Debian on http://lists.debian.org/<mid>
+
+A plugin based architecture should allow to add support lots of
+MUA and lots of external sources so that the user can pick those
+that are relevant to him. In the default configuration, the software
+should try to guess what sources to use.
+
