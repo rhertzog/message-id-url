@@ -1,0 +1,23 @@
+Source: message-id-url
+Section: mail
+Priority: optional
+Maintainer: Raphaël Hertzog <hertzog@debian.org>
+Build-Depends: debhelper (>= 8), python, python-distutils-extra, intltool
+Standards-Version: 3.9.1
+#Homepage: http://message-id-url.alioth.debian.org
+#Vcs-Git: git://git.debian.org/collab-maint/message-id-url.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/message-id-url.git;a=summary
+
+Package: message-id-url
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Support of the message-id URL scheme (mid:)
+ When this package is installed, you can click on URLs starting with
+ "mid:" (as defined in RFC 2392) and it will try to open the corresponding
+ message.
+ .
+ It will usually be configured to try to lookup in your mail reader and
+ to fallback on public mail or news archives.
+ .
+ A plugin based architecture makes it easy to extend the service by providing
+ supplementary sources of messages.
