@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+import os
+import sys
+import re
+
+msgid = sys.argv[1]
+
+# Extract msgid from URL
+match = re.compile("mid:([^/]*)(/.*)?").match(msgid)
+if match:
+    msgid = match.group(1)
+
+os.system("gnome-terminal -e \"/home/rhertzog/bin/open-msgid %s\"" % msgid)
+
