@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=open-msgid
+GenericName=Message ID Handler
+NoDisplay=true
+Comment=Handler for mid: URLs
+Exec=open-msgid %u
+MimeType=x-scheme-handler/mid
