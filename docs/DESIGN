@@ -1,0 +1,17 @@
+
+MessageLocation(object):
+    get_location() => string
+
+MessageId(MessageLocation):
+    get_location() => mid URL
+    get_id()
+    get_url()
+
+MessageFinder(object):
+    result_type => MessageLocationClass
+    find_all(msgid) => [something]
+    find_first(msgid) => something
+
+MessaseLauncher(object):
+    need_type => MessageLocationClass
+    launch(something)
