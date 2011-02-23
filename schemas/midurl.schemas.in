@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/mid/enabled</key>
+      <applyto>/desktop/gnome/url-handlers/mid/enabled</applyto>
+      <owner>message-id-url</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short>Whether the specified command should handle "mid" URLs</short>
+        <long>True if the command specified in the "command" key should handle "mid" URLs.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/mid/command</key>
+      <applyto>/desktop/gnome/url-handlers/mid/command</applyto>
+      <owner>message-id-url</owner>
+      <type>string</type>
+      <default>open-msgid "%s"</default>
+      <locale name="C">
+        <short>The handler for "mid" URLs</short>
+        <long>The command used to handle "mid" URLs, if enabled.</long>
+      </locale>
+    </schema>
+    <schema>
+      <key>/schemas/desktop/gnome/url-handlers/mid/needs_terminal</key>
+      <applyto>/desktop/gnome/url-handlers/mid/needs_terminal</applyto>
+      <owner>message-id-url</owner>
+      <type>bool</type>
+      <default>false</default>
+      <locale name="C">
+        <short>Run the command in a terminal</short>
+        <long>True if the command used to handle this type of URL should be run in a terminal.</long>
+      </locale>
+    </schema>
+  </schemalist>
+</gconfschemafile>

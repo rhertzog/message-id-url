@@ -28,5 +28,7 @@ if os.path.exists(changelog):
 setup(name='message-id-url',
       version=version,
       scripts=['open-msgid'],
-      data_files=[('/etc/firefox/pref/',   ["data/midurl.js"]),],
+      data_files=[('/etc/firefox/pref/',   ["data/midurl.js"]),
+                  ('share/kde4/services/', ["data/mid.protocol"]),
+                 ],
       )
