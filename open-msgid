@@ -7,9 +7,9 @@ import re
 msgid = sys.argv[1]
 
 # Extract msgid from URL
-match = re.compile("mid:([^/]*)(/.*)?").match(msgid)
+match = re.compile("mid:(///)?([^/]*)(/.*)?").match(msgid)
 if match:
-    msgid = match.group(1)
+    msgid = match.group(2)
 
-os.system("gnome-terminal -e \"/home/rhertzog/bin/open-msgid %s\"" % msgid)
+os.system("gnome-terminal -e \"/home/rhertzog/bin/my-open-msgid %s\"" % msgid)
 
