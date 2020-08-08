@@ -1,8 +1,11 @@
-message-id-url (0.2) UNRELEASED; urgency=medium
+message-id-url (0.2) unstable; urgency=medium
 
   * Fix up when URL starts with 3 slashes.
+  * Switch to python 3
+  * Bump Standards-Version to 4.5.0
+  * Switch to debhelper compat level 13
 
- -- Raphaël Hertzog <hertzog@debian.org>  Wed, 17 Jun 2015 10:34:58 +0200
+ -- Raphaël Hertzog <hertzog@debian.org>  Sat, 08 Aug 2020 17:52:01 +0200
 
 message-id-url (0.1) unstable; urgency=low
 
