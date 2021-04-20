@@ -7,7 +7,7 @@ import re
 msgid = sys.argv[1]
 
 # Extract msgid from URL
-match = re.compile("mid:(///)?([^/]*)(/.*)?").match(msgid)
+match = re.compile("mid:(///)?(.*@[^/]*)(/.*)?").match(msgid)
 if match:
     msgid = match.group(2)
 
