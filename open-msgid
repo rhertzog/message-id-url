@@ -11,4 +11,5 @@ match = re.compile("mid:(///)?(.*@[^/]*)(/.*)?").match(msgid)
 if match:
     msgid = match.group(2)
 
-os.system("gnome-terminal -- /home/rhertzog/bin/my-open-msgid '%s'" % msgid)
+os.spawnl(os.P_WAIT, "/usr/bin/gnome-terminal", "gnome-terminal", "--",
+          "/home/rhertzog/bin/my-open-msgid", msgid)
