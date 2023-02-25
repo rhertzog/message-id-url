@@ -1,3 +1,10 @@
+message-id-url (0.4) unstable; urgency=medium
+
+  * Fix shell injection issue by using os.spawnl() instead of os.system()
+  * Bump Standards-Version to 4.6.2
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Sat, 25 Feb 2023 14:49:02 +0100
+
 message-id-url (0.3) unstable; urgency=medium
 
   * Accept anything before the '@' in a message id
