@@ -3,7 +3,7 @@ Section: mail
 Priority: optional
 Maintainer: Raphaël Hertzog <hertzog@debian.org>
 Build-Depends: debhelper-compat (= 13), dh-python, python3, python3-distutils-extra, intltool
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2
 #Homepage: http://message-id-url.alioth.debian.org
 #Vcs-Git: git://git.debian.org/collab-maint/message-id-url.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/message-id-url.git;a=summary
