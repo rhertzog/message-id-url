@@ -1,0 +1,6 @@
+* Use `xdg-mime query default x-scheme-handler/mailto` to figure out the
+  default mailer and then make appropriate calls like `thunderbird -mail
+  "message-id://<ID_OF_MESSAGE>"` for Thunderbird
+* Have a setting to specify/override the mailer, and support gmail with
+  a "xdg-open" call that opens the corresponding search:
+  https://mail.google.com/mail/#search/rfc822msgid:QUOTED_MESSAGE_ID
